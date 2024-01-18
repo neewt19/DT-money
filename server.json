@@ -13,7 +13,15 @@
       "description": "Hamburguer",
       "type": "outcome",
       "category": "alimentação",
-      "price": "59",
+      "price": 59,
+      "createdAt": "2023-12-28T23:52:34.787"
+    },    
+    {
+      "id": 2,
+      "description": "notebook positivo",
+      "type": "outcome",
+      "category": "eletronico",
+      "price": 2000,
       "createdAt": "2023-12-28T23:52:34.787"
     }
   ]
