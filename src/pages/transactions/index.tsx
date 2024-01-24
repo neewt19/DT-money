@@ -18,15 +18,17 @@ export function Transactions(){
           {transactions.map(transaction => {
             return (
               <tbody key={transaction.id}>
-                <td width="50%">{transaction.description}</td>
-                <td>
-                  <S.PriceHighLight variant={transaction.type}>
-                    {transaction.type == 'outcome' && '- '}
-                    {priceFormatter.format(transaction.price)}
-                  </S.PriceHighLight>
-                </td>
-                <td>{transaction.category}</td>
-                <td>{dateFormatter.format(new Date(transaction.createdAt))}</td>
+                <tr>
+                  <td width="50%">{transaction.description}</td>
+                  <td>
+                    <S.PriceHighLight variant={transaction.type}>
+                      {transaction.type == 'outcome' && '- '}
+                      {priceFormatter.format(transaction.price)}
+                    </S.PriceHighLight>
+                  </td>
+                  <td>{transaction.category}</td>
+                  <td>{dateFormatter.format(new Date(transaction.createdAt))}</td>
+                </tr>
               </tbody>
             )
           })}
