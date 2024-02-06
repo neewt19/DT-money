@@ -15,7 +15,7 @@
       "category": "alimentação",
       "price": 59,
       "createdAt": "2023-12-28T23:52:34.787"
-    },    
+    },
     {
       "id": 3,
       "description": "notebook positivo",
@@ -23,6 +23,30 @@
       "category": "eletronico",
       "price": 2000,
       "createdAt": "2023-12-28T23:52:34.787"
+    },
+    {
+      "description": "celular",
+      "category": "eletronico",
+      "price": 790,
+      "type": "income",
+      "createdAt": "2024-02-06T14:18:17.300Z",
+      "id": 4
+    },
+    {
+      "description": "carro",
+      "category": "automovel",
+      "price": 50000,
+      "type": "outcome",
+      "createdAt": "2024-02-06T15:46:28.305Z",
+      "id": 5
+    },
+    {
+      "description": "desenvolvimento de app",
+      "category": "venda",
+      "price": 5000,
+      "type": "income",
+      "createdAt": "2024-02-06T15:47:43.184Z",
+      "id": 6
     }
   ]
 }

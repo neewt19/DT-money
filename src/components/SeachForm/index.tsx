@@ -10,31 +10,29 @@ const SeachFormSchema = z.object({
 
 type SeachFormImputs = z.infer<typeof SeachFormSchema>
 
-export function SeachForm(){
+export function SeachForm() {
   const {
     register,
     handleSubmit,
-    formState:{
-      isSubmitting
-    }
+    formState: { isSubmitting },
   } = useForm<SeachFormImputs>({
-    resolver: zodResolver(SeachFormSchema)
+    resolver: zodResolver(SeachFormSchema),
   })
 
-  async function handleSeachTransactions(data: SeachFormImputs){
-    await new Promise(resolve => setTimeout(resolve, 2000))
+  async function handleSeachTransactions(data: SeachFormImputs) {
+    await new Promise((resolve) => setTimeout(resolve, 2000))
     console.log(data)
   }
 
   return (
     <S.SeachFormConteiner onSubmit={handleSubmit(handleSeachTransactions)}>
-      <input 
-        type="text" 
-        placeholder='Busque uma transação'
+      <input
+        type="text"
+        placeholder="Busque uma transação"
         {...register('query')}
       />
-      <button type='submit' disabled={isSubmitting}>
-        <MagnifyingGlass size={20}/>
+      <button type="submit" disabled={isSubmitting}>
+        <MagnifyingGlass size={20} />
         Buscar
       </button>
     </S.SeachFormConteiner>
