@@ -47,6 +47,22 @@
       "type": "income",
       "createdAt": "2024-02-06T15:47:43.184Z",
       "id": 6
+    },
+    {
+      "description": "venda de carro",
+      "category": "venda",
+      "price": 40000,
+      "type": "income",
+      "createdAt": "2024-02-06T19:35:23.348Z",
+      "id": 7
+    },
+    {
+      "description": "maconha",
+      "category": "venda",
+      "price": 20,
+      "type": "income",
+      "createdAt": "2024-02-06T19:54:55.468Z",
+      "id": 8
     }
   ]
 }
