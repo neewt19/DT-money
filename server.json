@@ -55,14 +55,6 @@
       "type": "income",
       "createdAt": "2024-02-06T19:35:23.348Z",
       "id": 7
-    },
-    {
-      "description": "maconha",
-      "category": "venda",
-      "price": 20,
-      "type": "income",
-      "createdAt": "2024-02-06T19:54:55.468Z",
-      "id": 8
     }
   ]
 }
